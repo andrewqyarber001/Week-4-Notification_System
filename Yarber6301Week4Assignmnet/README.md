@@ -84,11 +84,14 @@ Simulated Services: No .env or API keys are required as the services currently u
 
 
 📚 API Documentation (JavaDocs)
-All public methods and classes contain inline documentation. To generate the HTML technical manual in the docfolder, execute:
+This project uses the Maven Javadoc Plugin to standardize technical documentation. Inline JavaDocs are present for all public methods and classes.
+
+To generate the full HTML technical manual in the target/site/apidocs folder, run the following command from the root directory:
 
 Bash
 
-javadoc -d docfolder *.java
+mvn javadoc:javadoc
+
 
 
 ⚖️ Licensing
